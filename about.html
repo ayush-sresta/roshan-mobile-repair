@@ -447,6 +447,8 @@
       overlay.addEventListener("click", () => {
         sidebar.classList.add("-translate-x-full");
         overlay.classList.add("hidden");
+        ham_toggle.classList.toggle("hidden")
+        cross_toggle.classList.add("hidden")
       });
       cross_toggle.addEventListener("click", () => {
         sidebar.classList.add("-translate-x-full");

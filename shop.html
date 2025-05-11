@@ -685,7 +685,7 @@
       </div>
     </footer>
 
-    <!-- JavaScript -->
+   <!-- JavaScript -->
     <script>
       const ham_toggle = document.getElementById("ham-toggle");
       const cross_toggle = document.getElementById("cross-toggle");
@@ -702,6 +702,8 @@
       overlay.addEventListener("click", () => {
         sidebar.classList.add("-translate-x-full");
         overlay.classList.add("hidden");
+        ham_toggle.classList.toggle("hidden")
+        cross_toggle.classList.add("hidden")
       });
       cross_toggle.addEventListener("click", () => {
         sidebar.classList.add("-translate-x-full");
