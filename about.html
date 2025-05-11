@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Roshan Mobile Repair(RMR)</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar (Top) -->
+    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold">
+          <img
+            src="./Screenshot-2025-05-04-08.48.25.png"
+            class="w-10"
+            alt="Logo"
+          />
+        </div>
+
+        <!-- Regular Navbar (visible on lg) -->
+        <ul class="hidden lg:flex space-x-8 font-medium">
+          <li>
+            <a href="./index.html" class="hover:text-[var(--color-primary)]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="./services.html" class="hover:text-[var(--color-primary)]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="./shop.html" class="hover:text-[var(--color-primary)]"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a href="./about.html" class="hover:text-[var(--color-primary)]"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="./project.html" class="hover:text-[var(--color-primary)]"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="hover:text-[var(--color-primary)]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="./blog.html" class="hover:text-[var(--color-primary)]"
+              >Blog</a
+            >
+          </li>
+        </ul>
+        <div class="relative hidden lg:flex">
+          <span
+            class="absolute left-24 bottom-6 bg-white text-black rounded-[100px] px-1"
+            >0</span
+          >
+          <button
+            class="bg-[var(--color-primary)] px-3 py-2 text-white flex gap-3 hover:opacity-90 rounded-md items-center"
+          >
+            My cart <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+        <!-- Hamburger (visible on small) -->
+        <button id="ham-toggle" class="lg:hidden block focus:outline-none">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+        <button id="cross-toggle" class="lg:hidden hidden">
+          <i class="fa-solid fa-xmark text-3xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div
+      id="sidebar"
+      class="fixed top-0 left-0 w-64 h-full flex justify-center flex-col gap-20 items-center bg-white shadow-md transform -translate-x-full transition-transform duration-300 z-40 lg:hidden p-6 pt-20"
+    >
+      <ul class="space-y-6 flex flex-col items-center text-lg font-medium">
+        <li>
+          <a href="./index.html" class="block hover:text-[var(--color-primary)]"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="./services.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="./shop.html" class="block hover:text-[var(--color-primary)]"
+            >Shop</a
+          >
+        </li>
+        <li>
+          <a href="./about.html" class="block hover:text-[var(--color-primary)]"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="./project.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="./contact.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="./blog.html" class="block hover:text-[var(--color-primary)]"
+            >Blog</a
+          >
+        </li>
+      </ul>
+    </div>
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-5">
+        <div
+          class="w-full h-60 sm:h-80 md:h-[24rem] relative bg-[url('https://rmr.aakashhub.com/wp-content/uploads/2025/04/mobile-repair.avif')] bg-center bg-no-repeat bg-cover flex justify-center items-center"
+        >
+          <div class="absolute inset-0 bg-black/35"></div>
+
+          <!-- Content -->
+          <div class="relative z-10 text-center text-white px-4">
+            <h1
+              class="text-2xl lg:text-4xl text-[var(--color-accent)] font-bold leading-tight mb-2"
+            >
+              "Your Trusted Mobile & Laptop Repair Expert in London"
+            </h1>
+            <p
+              class="text-sm sm:text-base md:text-lg mb-4 text-[var(--color-card)]"
+            >
+              “From screen replacements to hardware upgrades, we bring devices
+              back to life with speed and care.”
+            </p>
+            <button class="bg-[var(--color-primary)] p-3 rounded-lg">
+              "Get a Free Repair Quote"
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-10 mt-20"
+        >
+          <!-- Text Content -->
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h1
+              class="text-[var(--color-primary)] font-bold text-3xl lg:text-5xl"
+            >
+              Our Journey
+            </h1>
+            <h2
+              class="text-[var(--color-accent)] font-medium text-lg lg:text-2xl mt-3"
+            >
+              "From a small shop in London to a trusted mobile & laptop repair
+              brand."
+            </h2>
+            <p
+              class="text-[var(--color-text)] mt-4 text-[15px] leading-relaxed"
+            >
+              Roshan Mobile Repair (RMR) started with a single goal — to offer
+              fast, affordable, and trustworthy mobile repair services in the
+              heart of London. What began as a humble local shop has grown into
+              a brand known for quality service, genuine parts, and customer
+              satisfaction.
+              <br /><br />
+              Over the years, we’ve successfully repaired thousands of devices —
+              from iPhones and Samsung phones to laptops and tablets. We’ve
+              expanded our offerings to include gadget accessories like
+              chargers, covers, earbuds, and more.
+              <br /><br />
+              Our commitment remains the same: fast service, transparent
+              pricing, and happy customers. RMR isn’t just a shop — it’s a
+              reliable partner for all your tech needs.
+            </p>
+          </div>
+
+          <!-- Image -->
+          <div class="lg:w-1/3">
+            <img
+              class="hidden lg:block w-full max-w-[600px] mx-auto"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/conceptual-timeline.avif"
+              alt="conceptual timeline"
+            />
+          </div>
+        </div>
+        <div
+          class="p-6 mt-20 flex justify-center items-center flex-col md:grid md:grid-cols-2 gap-5"
+          style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+        >
+          <!-- Mission Block -->
+          <div
+            class="mission relative flex flex-col justify-center items-center text-center px-4 py-16 lg:py-24 overflow-hidden"
+          >
+            <img
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/mission-goals-target-aspirations-motivation-strategy-concept_53876-124797.avif"
+              alt="Mission background"
+              class="absolute inset-0 w-full h-full object-cover opacity-20 blur-sm z-0"
+            />
+            <div class="relative z-10 max-w-3xl">
+              <h1
+                class="text-[var(--color-primary)] font-bold text-2xl lg:text-4xl mb-4"
+              >
+                Our Mission
+              </h1>
+              <p
+                class="text-[var(--color-text)] font-normal text-[15px] leading-relaxed"
+              >
+                At Roshan Mobile Repair, our mission is to deliver fast, honest,
+                and affordable repair services while maintaining the highest
+                standards of customer care. We aim to bring devices back to life
+                and smiles back to our customers’ faces—every single day.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vision Block with Vertical Divider -->
+          <div
+            class="mission relative flex flex-col justify-center items-center text-center px-4 py-16 lg:py-24 overflow-hidden md:border-l md:border-[var(--color-text)]"
+          >
+            <img
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/mission.avif"
+              alt="Vision background"
+              class="absolute inset-0 w-full h-full object-cover opacity-20 blur-sm z-0"
+            />
+            <div class="relative z-10 max-w-3xl">
+              <h1
+                class="text-[var(--color-primary)] font-bold text-2xl lg:text-4xl mb-4"
+              >
+                Our Vision
+              </h1>
+              <p
+                class="text-[var(--color-text)] font-normal text-[15px] leading-relaxed"
+              >
+                We envision becoming the UK’s most trusted name in gadget repair
+                and accessories—empowering customers with quality, speed, and
+                value, both in-store and online. Our goal is to expand with
+                multiple branches, while never compromising our personal touch.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-20">
+          <h1
+            class="text-[var(--color-primary)] font-bold text-2xl text-center lg:text-4xl"
+          >
+            Meet Our Founder – Roshan Kumar Acharya
+          </h1>
+          <div class="flex flex-col items-center lg:flex-row-reverse mt-7 justify-center gap-4">
+            <img
+            class="w-56 sm:w-72 md:w-80"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/client-1024x1009.jpg"
+              alt="founder of RMR"
+            />
+            <div class="mt-2">
+              <p class="text-center">
+                Roshan Kumar Acharya is the founder and lead technician at
+                <strong>Roshan Mobil(RMR)</strong>. Originally from <strong>Dharan, Nepal</strong> and now
+                based in London, UK, Roshan brings years of hands-on experience
+                in mobile and electronics repair. He studied iPhone Repairing at
+               <strong>FIXST Maintenance College</strong> and has worked with top service
+                centers like <strong>Advance Solution Center</strong>, <strong>Refixtronic</strong>, and <strong>Smart
+                Tech Coffee Eltham</strong>. His background also includes technical roles
+                as an <strong>Engineering Technician </strong> and <strong>Electrician</strong>. With a deep
+                passion for mobile technology and a commitment to quality
+                service, Roshan ensures every repair is handled with care,
+                precision, and trust.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-white text-gray-800 py-20">
+      <div
+        class="max-w-7xl px-6 mx-auto flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between"
+      >
+        <!-- Logo Section -->
+        <div class="text-center sm:text-left">
+          <img
+            src="./WhatsApp Image 2025-05-08 at 10.59.42_93d662f1.jpg"
+            alt="Logo"
+            class="mb-4 mx-auto w-56 sm:mx-0"
+          />
+          <p class="text-[var(--color-primary)] text-xl font-semibold mt-2">
+            Roshan Mobile Repair (RMR)
+          </p>
+          <p class="text-sm text-gray-500 mt-2 max-w-xs mx-auto sm:mx-0">
+            We provide fast, affordable, and reliable mobile repair services for
+            all major brands.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="text-center sm:text-left">
+          <h3 class="text-xl font-semibold mb-4 text-[var(--color-primary)]">
+            Quick Links
+          </h3>
+          <ul class="space-y-2 text-[var(--color-text)]">
+            <li>
+              <a
+                href="./index.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="./shop.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="./project.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="text-center sm:text-left">
+          <h3 class="text-xl font-semibold mb-4 text-[var(--color-primary)]">
+            Follow Us
+          </h3>
+          <ul
+            class="flex justify-center sm:justify-start space-x-4 text-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-facebook text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-twitter text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-youtube text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-square-instagram text-xl"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="mt-10 border-t border-gray-200 pt-4 text-center text-sm text-gray-500"
+      >
+        <p class="mt-5">
+          © 2025
+          <span class="text-[var(--color-primary)] font-bold"
+            >Roshan Mobile Repair</span
+          >. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-30 hidden z-30 lg:hidden"
+    ></div>
+
+    <!-- JavaScript -->
+    <script>
+      const ham_toggle = document.getElementById("ham-toggle");
+      const cross_toggle = document.getElementById("cross-toggle");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+
+      ham_toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("-translate-x-full");
+        overlay.classList.toggle("hidden");
+        cross_toggle.classList.toggle("hidden");
+        ham_toggle.classList.toggle("hidden");
+      });
+
+      overlay.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+      });
+      cross_toggle.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+        ham_toggle.classList.toggle("hidden");
+        cross_toggle.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

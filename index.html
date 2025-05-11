@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roshan Mobile Repair (RMR)</title>
+    <link
+      rel="shortcut icon"
+      href="./Screenshot-2025-05-04-08.48.25.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Navbar (Top) -->
+    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold">
+          <img
+            src="./Screenshot-2025-05-04-08.48.25.png"
+            class="w-10"
+            alt="Logo"
+          />
+        </div>
+
+        <!-- Regular Navbar (visible on lg) -->
+        <ul class="hidden lg:flex space-x-8 font-medium">
+          <li>
+            <a href="./index.html" class="hover:text-[var(--color-primary)]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="./services.html" class="hover:text-[var(--color-primary)]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="./shop.html" class="hover:text-[var(--color-primary)]"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a href="./about.html" class="hover:text-[var(--color-primary)]"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="./project.html" class="hover:text-[var(--color-primary)]"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="hover:text-[var(--color-primary)]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="./blog.html" class="hover:text-[var(--color-primary)]"
+              >Blog</a
+            >
+          </li>
+        </ul>
+        <div class="relative hidden lg:flex">
+          <span
+            class="absolute left-24 bottom-6 bg-white text-black rounded-[100px] px-1"
+            >0</span
+          >
+          <button
+            class="bg-[var(--color-primary)] px-3 py-2 text-white flex gap-3 hover:opacity-90 rounded-md items-center"
+          >
+            My cart <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+        <!-- Hamburger (visible on small) -->
+        <button id="ham-toggle" class="lg:hidden block focus:outline-none">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+        <button id="cross-toggle" class="lg:hidden hidden">
+          <i class="fa-solid fa-xmark text-3xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div
+      id="sidebar"
+      class="fixed top-0 left-0 w-64 h-full flex justify-center flex-col gap-20 items-center bg-white shadow-md transform -translate-x-full transition-transform duration-300 z-40 lg:hidden p-6 pt-20"
+    >
+      <ul class="space-y-6 flex flex-col items-center text-lg font-medium">
+        <li>
+          <a href="./index.html" class="block hover:text-[var(--color-primary)]"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="./services.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="./shop.html" class="block hover:text-[var(--color-primary)]"
+            >Shop</a
+          >
+        </li>
+        <li>
+          <a href="./about.html" class="block hover:text-[var(--color-primary)]"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="./project.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="./contact.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="./blog.html" class="block hover:text-[var(--color-primary)]"
+            >Blog</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="px-4 mt-28 lg:mt-44 max-w-7xl mx-auto">
+      <div
+        class="flex flex-col lg:flex-row-reverse lg:justify-end items-center gap-8"
+      >
+        <!-- Image -->
+        <div class="w-full flex justify-center">
+          <img
+            class="w-full max-w-sm md:max-w-full object-contain"
+            src="./serviceman-uses-magnifier-screwdriver-repair-damaged-smartphone-electronic-workshop_613910-20797.avif"
+            alt="Mobile Repair"
+          />
+        </div>
+
+        <!-- Text Content -->
+        <div class="w-full text-center">
+          <h1
+            class="text-[var(--color-primary)] text-2xl lg:text-4xl font-bold leading-tight"
+          >
+            Fast & Reliable Mobile Repairs in London
+          </h1>
+          <p class="text-[var(--color-text)] text-[17px] mt-3">
+            We fix iPhone, Samsung, Vivo, Oppo & more — with top-quality service
+            and accessories you can trust.
+          </p>
+
+          <!-- Buttons -->
+          <div
+            class="flex flex-col lg:flex-row lg:justify-center justify-evenly gap-4 mt-6"
+          >
+            <button
+              class="bg-[var(--color-primary)] px-5 py-2 rounded-md text-white hover:opacity-90 transition"
+            >
+              Book a Repair
+            </button>
+            <button
+              class="bg-[var(--color-primary)] px-5 py-2 rounded-md text-white hover:opacity-90 transition"
+            >
+              Shop Accessories
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Popular Accessories -->
+    <section class="mt-36">
+      <div class="max-w-7xl m-auto">
+        <h1
+          class="text-center text-[var(--color-primary)] font-bold text-2xl lg:text-4xl"
+        >
+          Popular Accessories
+        </h1>
+        <p class="text-[var(--color-text)] text-center mt-2">
+          Browse our most requested items — from fast chargers to protective
+          covers.
+        </p>
+        <div
+          class="flex gap-5 md:grid md:grid-cols-2 lg:flex lg:flex-row lg:gap-10 justify-center flex-col items-center mt-10 px-4"
+        >
+          <!-- Card 1 -->
+          <div
+            class="w-full max-w-sm bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-105 cursor-pointer duration-300 transition-transform group"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-64 object-cover rounded-t-2xl"
+                src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/elegant-smartphone-composition_23-2149437089.avif"
+                alt="Shockproof iPhone Cover"
+              />
+            </div>
+            <div class="p-4">
+              <h2
+                class="text-lg font-semibold text-gray-800 group-hover:text-[var(--color-primary)] transition-colors duration-200"
+              >
+                Shockproof iPhone Cover
+              </h2>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-[var(--color-primary)] font-bold text-lg">
+                  <del class="text-red-500 mr-1">$10.00</del> $6.00
+                </span>
+                <button
+                  class="flex items-center gap-2 bg-[var(--color-primary)] text-white text-sm px-3 py-2 rounded-md hover:bg-opacity-90 transition"
+                >
+                  Add to cart<i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="w-full max-w-sm bg-white rounded-2xl shadow-md hover:shadow-md hover:scale-105 cursor-pointer duration-300 transition-transform group"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-64 object-cover rounded-t-2xl"
+                src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/wireless-earbuds-with-neon-cyberpunk-style-lighting_23-2151074297.avif"
+                alt="Wireless Earbuds"
+              />
+            </div>
+            <div class="p-4">
+              <h2
+                class="text-lg font-semibold text-gray-800 group-hover:text-[var(--color-primary)] transition-colors duration-200"
+              >
+                Wireless Earbuds
+              </h2>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-[var(--color-primary)] font-bold text-lg">
+                  <del class="text-red-500 mr-1">$30.00</del> $23.00</span
+                >
+                <button
+                  class="flex items-center gap-2 bg-[var(--color-primary)] text-white text-sm px-3 py-2 rounded-md hover:bg-opacity-90 transition"
+                >
+                  Add to cart<i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="w-full max-w-sm bg-white rounded-2xl shadow-md hover:scale-105 cursor-pointer duration-300 transition-transform group"
+          >
+            <div class="relative">
+              <img
+                class="w-full h-64 object-cover rounded-t-2xl"
+                src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/charger-usb-cable-type-c-orange-background_58702-4531.avif"
+                alt="Charger Cable"
+              />
+            </div>
+            <div class="p-4">
+              <h2
+                class="text-lg font-semibold text-gray-800 group-hover:text-[var(--color-primary)] transition-colors duration-200"
+              >
+                USB-C Fast Charger
+              </h2>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-[var(--color-primary)] font-bold text-lg">
+                  <del class="text-red-500 mr-1">$20.00</del> $13.00</span
+                >
+                <button
+                  class="flex items-center gap-2 bg-[var(--color-primary)] text-white text-sm px-3 py-2 rounded-md hover:bg-opacity-90 transition"
+                >
+                  Add to cart <i class="fas fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-7">
+          <button
+            class="px-2 py-3 text-white rounded-md hover:opacity-90 bg-[var(--color-primary)]"
+          >
+            Explore all Accessories
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Popular Accessories End -->
+
+    <!-- Services start -->
+    <section class="mt-20">
+      <div class="max-w-7xl m-auto px-6">
+        <h1
+          class="text-[var(--color-primary)] font-bold text-center text-2xl lg:text-4xl"
+        >
+          Mobile Repair Services We Offer
+        </h1>
+        <p class="text-center text-[var(--color-text)] mt-2">
+          We repair all major mobile brands with expert care and quick
+          turnaround — right here in London.
+        </p>
+        <div
+          class="flex flex-col lg:grid md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-4"
+        >
+          <!-- service 1 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col hover:-translate-y-1 cursor-pointer duration-150 items-center justify-center py-10 px-1"
+          >
+            <img
+              class="w-28 object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/apple.png"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              iPhone Repair
+            </h2>
+            <p class="text-center mt-1">
+              Screen, battery, and motherboard repairs for all iPhone models.
+            </p>
+          </div>
+          <!-- service 2 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col hover:-translate-y-1 cursor-pointer duration-150 items-center justify-center py-10 px-1 hover:-translate-y-1 cursor-pointer duration-150"
+          >
+            <img
+              class="w-28 object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/sam.png"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Samsung Repair
+            </h2>
+            <p class="text-center mt-1">
+              Genuine parts and expert repairs for all Samsung phones.
+            </p>
+          </div>
+          <!-- service 3 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-10 px-1 hover:-translate-y-1 cursor-pointer duration-150"
+          >
+            <img
+              class="w-28 object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/android.png"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Vivo & Oppo Repair
+            </h2>
+            <p class="text-center mt-1">
+              Repairs for all Vivo, Oppo, and Android phones.
+            </p>
+          </div>
+          <!-- service 4  -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-10 px-1 hover:-translate-y-1 cursor-pointer duration-150"
+          >
+            <img
+              class="w-28 object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/battery.png"
+              alt=""
+            />
+            <h2
+              class="text-[var(--color-primary)] text-xl text-center font-bold mt-2"
+            >
+              Battery & Charging Port Repair
+            </h2>
+            <p class="text-center mt-1">
+              Fast replacement for faulty batteries and charging issues.
+            </p>
+          </div>
+          <!-- service 5 -->
+
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-10 px-1 hover:-translate-y-1 cursor-pointer duration-150"
+          >
+            <img
+              class="w-28 object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/mobile.png"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Screen Replacement
+            </h2>
+            <p class="text-center mt-1">
+              Cracked or unresponsive screens? We’ve got you covered.
+            </p>
+          </div>
+          <!-- service 6 -->
+
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-10 px-1 hover:-translate-y-1 cursor-pointer duration-150"
+          >
+            <img
+              class="w-28 object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/water.png"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Water Damage Repair
+            </h2>
+            <p class="text-center mt-1">
+              Save your phone from water damage — fast diagnosis & fix
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services end -->
+
+    <!-- What Makes Roshan Mobile Repair Different? section -->
+    <section class="mt-20">
+      <div class="max-w-7xl m-auto px-6">
+        <h1
+          class="text-[var(--color-primary)] font-bold text-2xl lg:text-4xl text-center"
+        >
+          What Makes Roshan Mobile Repair Different?
+        </h1>
+        <p class="text-center mt-2">
+          We’re not just another repair shop — we focus on honesty, quality, and
+          making sure your phone lasts longer. Here’s what sets us apart.
+        </p>
+        <div
+          class="flex flex-col lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 gap-5 mt-10"
+        >
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-10 px-1 hover:-translate-y-1 cursor-pointer duration-150"
+          >
+            <img
+              class="w-28 object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/mkistri.png"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Expert Technicians
+            </h2>
+            <p class="text-center mt-1">
+              Our technicians are certified and have over 10 years of combined
+              experience repairing all kinds of smartphones.
+            </p>
+          </div>
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-10 px-1 hover:-translate-y-1 cursor-pointer duration-150"
+          >
+            <img
+              class="w-28 object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/trannjparerncy.png"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Transparent Pricing
+            </h2>
+            <p class="text-center mt-1">
+              No hidden charges. We provide clear, upfront pricing so you know
+              exactly what you're paying for.
+            </p>
+          </div>
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-10 px-1 hover:-translate-y-1 cursor-pointer duration-150"
+          >
+            <img
+              class="w-28 object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/clock.png"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Quick Turnaround
+            </h2>
+            <p class="text-center mt-1">
+              Most repairs are done within an hour, so you can get back to your
+              life — fast and hassle-free.
+            </p>
+          </div>
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-10 px-1 hover:-translate-y-1 cursor-pointer duration-150"
+          >
+            <img
+              class="w-28 object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/check-mark.png"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              90-Day Warranty
+            </h2>
+            <p class="text-center mt-1">
+              We stand by our work. All repairs come with a 90-day warranty for
+              peace of mind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Our Customers Are Sayiny -->
+    <section class="mt-20">
+      <div class="max-w-7xl m-auto px-6">
+        <h1
+          class="text-2xl text-[var(--color-primary)] font-bold text-center lg:text-4xl"
+        >
+          What Our Customers Are Saying
+        </h1>
+        <p class="text-center mt-2">
+          We've helped hundreds of people across London get their phones fixed
+          fast, affordably, and stress-free.
+        </p>
+        <div class="h-[1px] opacity-10 w-full mt-5 bg-black"></div>
+        <div
+          class="flex flex-col items-center justify-center lg:flex lg:flex-row lg:divide-x divide-y lg:divide-y-0 divide-black/10 mt-5"
+        >
+          <!-- Testimonial 1 -->
+          <div class="flex-1 px-4 py-5">
+            <p class="text-center">
+              “Fast service and really friendly. My iPhone screen looks brand
+              new, and they even gave me a screen protector for free!”
+            </p>
+            <div class="flex justify-center gap-5 mt-3">
+              <img
+                class="w-10"
+                src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/man.png"
+                alt="Customer image"
+              />
+              <div class="flex flex-col">
+                <h3 class="text-[var(--color-primary)] font-bold">Stephen</h3>
+                <p>iPhone Screen Repair</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="flex-1 px-4 py-5">
+            <p class="text-center">
+              “Highly recommend RMR! Transparent pricing, quick turnaround, and
+              great customer service. I won’t go anywhere else.”
+            </p>
+            <div class="flex justify-center gap-5 mt-3">
+              <img
+                class="w-10"
+                src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/man2.png"
+                alt="Customer image"
+              />
+              <div class="flex flex-col">
+                <h3 class="text-[var(--color-primary)] font-bold">Mathew</h3>
+                <p>Samsung Battery Repl...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="flex-1 px-4 py-5">
+            <p class="text-center">
+              “I ordered earbuds online and picked them up the same day. Great
+              quality at a fair price. Smooth experience from start to finish.”
+            </p>
+            <div class="flex justify-center gap-5 mt-3">
+              <img
+                class="w-10"
+                src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/wo.png"
+                alt="Customer image"
+              />
+              <div class="flex flex-col">
+                <h3 class="text-[var(--color-primary)] font-bold">Sarah L</h3>
+                <p>Earbuds Purchase</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[1px] opacity-10 w-full mt-5 bg-black"></div>
+      </div>
+    </section>
+
+    <!-- another section  -->
+    <section class="mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div
+          class="w-full h-60 sm:h-80 md:h-[24rem] relative bg-[url('https://rmr.aakashhub.com/wp-content/uploads/2025/04/mo-re.avif')] bg-center bg-no-repeat bg-cover flex justify-center items-center"
+        >
+          <!-- Dark overlay for readability -->
+          <div class="absolute inset-0 bg-black/60"></div>
+
+          <!-- Content -->
+          <div class="relative z-10 text-center text-white px-4">
+            <h1
+              class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-2"
+            >
+              Need Fast & Affordable Mobile Repair in London?
+            </h1>
+            <p
+              class="text-sm sm:text-base md:text-lg mb-4 text-[var(--color-card)]"
+            >
+              We fix all major brands — iPhone, Samsung, Vivo, Oppo & more. Get
+              same-day repair with expert service you can trust.
+            </p>
+            <button
+              class="bg-[var(--color-primary)] hover:opacity-90 text-white font-semibold px-5 py-2 rounded-full transition duration-300"
+            >
+              Book a Repair Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-800 py-20">
+      <div
+        class="max-w-7xl px-6 mx-auto flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between"
+      >
+        <!-- Logo Section -->
+        <div class="text-center sm:text-left">
+          <img
+            src="./WhatsApp Image 2025-05-08 at 10.59.42_93d662f1.jpg"
+            alt="Logo"
+            class="mb-4 mx-auto w-56 sm:mx-0"
+          />
+          <p class="text-[var(--color-primary)] text-xl font-semibold mt-2">
+            Roshan Mobile Repair (RMR)
+          </p>
+          <p class="text-sm text-gray-500 mt-2 max-w-xs mx-auto sm:mx-0">
+            We provide fast, affordable, and reliable mobile repair services for
+            all major brands.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="text-center sm:text-left">
+          <h3 class="text-xl font-semibold mb-4 text-[var(--color-primary)]">
+            Quick Links
+          </h3>
+          <ul class="space-y-2 text-[var(--color-text)]">
+            <li>
+              <a
+                href="./index.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="./shop.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="./project.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="text-center sm:text-left">
+          <h3 class="text-xl font-semibold mb-4 text-[var(--color-primary)]">
+            Follow Us
+          </h3>
+          <ul
+            class="flex justify-center sm:justify-start space-x-4 text-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-facebook text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-twitter text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-youtube text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-square-instagram text-xl"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="mt-10 border-t border-gray-200 pt-4 text-center text-sm text-gray-500"
+      >
+        <p class="mt-5">
+          © 2025
+          <span class="text-[var(--color-primary)] font-bold"
+            >Roshan Mobile Repair</span
+          >. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Overlay -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-30 hidden z-30 lg:hidden"
+    ></div>
+
+    <!-- JavaScript -->
+    <script>
+      const ham_toggle = document.getElementById("ham-toggle");
+      const cross_toggle = document.getElementById("cross-toggle");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+
+      ham_toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("-translate-x-full");
+        overlay.classList.toggle("hidden");
+        cross_toggle.classList.toggle("hidden");
+        ham_toggle.classList.toggle("hidden");
+      });
+
+      overlay.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+      });
+      cross_toggle.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+        ham_toggle.classList.toggle("hidden");
+        cross_toggle.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

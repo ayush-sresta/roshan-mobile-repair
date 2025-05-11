@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* input.css */
+
+:root {
+  --color-background: hwb(0 100% 0%);
+  --color-primary: #0d3998;
+  --color-accent: #93C5FD;
+  --color-text: #111827;
+  --color-muted: #6B7280;
+  --color-card: #F9FAFB;
+}

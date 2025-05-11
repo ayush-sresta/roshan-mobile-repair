@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Roshan Mobile Repair(RMR)</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <link
+      rel="shortcut icon"
+      href="./Screenshot-2025-05-04-08.48.25.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Navbar (Top) -->
+    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold">
+          <img
+            src="./Screenshot-2025-05-04-08.48.25.png"
+            class="w-10"
+            alt="Logo"
+          />
+        </div>
+
+        <!-- Regular Navbar (visible on lg) -->
+        <ul class="hidden lg:flex space-x-8 font-medium">
+          <li>
+            <a href="./index.html" class="hover:text-[var(--color-primary)]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="./services.html" class="hover:text-[var(--color-primary)]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="./shop.html" class="hover:text-[var(--color-primary)]"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a href="./about.html" class="hover:text-[var(--color-primary)]"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="./project.html" class="hover:text-[var(--color-primary)]"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="hover:text-[var(--color-primary)]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="./blog.html" class="hover:text-[var(--color-primary)]"
+              >Blog</a
+            >
+          </li>
+        </ul>
+        <div class="relative hidden lg:flex">
+          <span
+            class="absolute left-24 bottom-6 bg-white text-black rounded-[100px] px-1"
+            >0</span
+          >
+          <button
+            class="bg-[var(--color-primary)] px-3 py-2 text-white flex gap-3 hover:opacity-90 rounded-md items-center"
+          >
+            My cart <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+        <!-- Hamburger (visible on small) -->
+        <button id="ham-toggle" class="lg:hidden block focus:outline-none">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+        <button id="cross-toggle" class="lg:hidden hidden">
+          <i class="fa-solid fa-xmark text-3xl"></i>
+        </button>
+      </div>
+    </nav>
+
+
+
+<!-- sidebar -->
+    <div
+      id="sidebar"
+      class="fixed top-0 left-0 w-64 h-full flex justify-center flex-col gap-20 items-center bg-white shadow-md transform -translate-x-full transition-transform duration-300 z-40 lg:hidden p-6 pt-20"
+    >
+      <ul class="space-y-6 flex flex-col items-center text-lg font-medium">
+        <li>
+          <a href="./index.html" class="block hover:text-[var(--color-primary)]"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="./services.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="./shop.html" class="block hover:text-[var(--color-primary)]"
+            >Shop</a
+          >
+        </li>
+        <li>
+          <a href="./about.html" class="block hover:text-[var(--color-primary)]"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="./project.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="./contact.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="./blog.html" class="block hover:text-[var(--color-primary)]"
+            >Blog</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- services  -->
+
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-5">
+        <div
+          class="w-full h-60 sm:h-80 md:h-[24rem] relative bg-[url('https://rmr.aakashhub.com/wp-content/uploads/2025/04/handsome-young-man-smiling-while-repairing-old-smartphone-male-technician-using-screwdriver-fix-broken-cellphone-workshop_662251-254.avif')] bg-center bg-no-repeat bg-cover flex justify-center items-center"
+        >
+          <div class="absolute inset-0 bg-black/60"></div>
+
+          <!-- Content -->
+          <div class="relative z-10 text-center text-white px-4">
+            <h1
+              class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-2"
+            >
+              Expert Mobile & Laptop Repair Services in London
+            </h1>
+            <p
+              class="text-sm sm:text-base md:text-lg mb-4 text-[var(--color-card)]"
+            >
+              Fast, reliable, and affordable repairs for all major brands —
+              iPhone, Samsung, Vivo, Oppo, Dell, HP & more.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:grid md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-20"
+        >
+          <!-- service 1 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-2 px-1"
+          >
+            <img
+              class="w-48 rounded-2xl object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/battery-replace.avif"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Battery Replacement
+            </h2>
+            <p class="text-center mt-1">
+              "Quick and safe replacement for all devices."
+            </p>
+          </div>
+          <!-- service 2 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-2 px-1"
+          >
+            <img
+              class="w-48 rounded-2xl object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/Screen-Repair.avif"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Screen Repair
+            </h2>
+            <p class="text-center mt-1">
+              "Fix cracked, broken, or unresponsive screens."
+            </p>
+          </div>
+          <!-- service 3 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-2 px-1"
+          >
+            <img
+              class="w-48 rounded-2xl object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/Charging-Port-Repair.avif"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Charging Port Repair
+            </h2>
+            <p class="text-center mt-1">
+              "Solve charging issues with quality parts."
+            </p>
+          </div>
+          <!-- service 4 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-2 px-1"
+          >
+            <img
+              class="w-48 rounded-2xl object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/Software-Unlocking.avif"
+              alt=""
+            />
+            <h2
+              class="text-[var(--color-primary)] text-xl text-center font-bold mt-2"
+            >
+              Software & Unlocking
+            </h2>
+            <p class="text-center mt-1">
+              "Fix software issues, unfreeze phones, and unlock devices."
+            </p>
+          </div>
+          <!-- service 5 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-2 px-1"
+          >
+            <img
+              class="w-48 rounded-2xl object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/Screen-Replacement.avif"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Screen Replacement
+            </h2>
+            <p class="text-center mt-1">
+              "Replace broken or flickering laptop displays."
+            </p>
+          </div>
+          <!-- service 6 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-2 px-1"
+          >
+            <img
+              class="w-48 rounded-2xl object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/Keyboard-Trackpad-Repair.jpg"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Keyboard & Trackpad Repair
+            </h2>
+            <p class="text-center mt-1">
+              "Non-responsive keyboard or trackpad? We'll fix it."
+            </p>
+          </div>
+          <!-- service 7 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-2 px-1"
+          >
+            <img
+              class="w-48 rounded-2xl object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/Slow-Performance-Fix.avif"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Slow Performance Fix
+            </h2>
+            <p class="text-center mt-1">
+              "Speed up sluggish laptops with diagnostics & tune-ups."
+            </p>
+          </div>
+          <!-- service 8 -->
+          <div
+            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            class="flex flex-col items-center justify-center py-2 px-1"
+          >
+            <img
+              class="w-48 rounded-2xl object-cover"
+              src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/Overheating-Fan-Cleaning.avif"
+              alt=""
+            />
+            <h2 class="text-[var(--color-primary)] text-xl font-bold mt-2">
+              Overheating & Fan Cleaning
+            </h2>
+            <p class="text-center mt-1">
+              "Deep internal cleaning for better cooling and life."
+            </p>
+          </div>
+        </div>
+        <div class="mt-20 bg-[var(--color-card)]">
+          <h2
+            class="text-center text-2xl lg:text-4xl font-semibold text-[var(--color-primary)] mb-8"
+          >
+            Why Choose Us
+          </h2>
+
+          <div class="flex flex-col lg:flex-row items-center gap-10">
+            <!-- Left: Features Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 flex-1">
+              <div class="flex flex-col items-center text-center">
+                <i
+                  class="fa-regular fa-clock text-2xl lg:text-4xl p-3 rounded-full text-white bg-[var(--color-primary)]"
+                ></i>
+                <p class="text-[var(--color-text)] font-semibold mt-2">
+                  Same-Day Repairs
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center text-center">
+                <i
+                  class="fa-solid fa-users text-2xl lg:text-4xl p-3 rounded-full text-white bg-[var(--color-primary)]"
+                ></i>
+                <p class="text-[var(--color-text)] font-semibold mt-2">
+                  Certified Technicians
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center text-center">
+                <i
+                  class="fa-solid fa-business-time text-2xl lg:text-4xl p-3 rounded-full text-white bg-[var(--color-primary)]"
+                ></i>
+                <p class="text-[var(--color-text)] font-semibold mt-2">
+                  Located in London – Trusted Locally
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center text-center">
+                <i
+                  class="fas fa-tools text-2xl lg:text-4xl p-3 rounded-full text-white bg-[var(--color-primary)]"
+                ></i>
+
+                <p class="text-[var(--color-text)] font-semibold mt-2">
+                  Genuine Spare Parts
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center text-center">
+                <i
+                  class="fa-solid fa-award text-2xl lg:text-4xl p-3 rounded-full text-white bg-[var(--color-primary)]"
+                ></i>
+                <p class="text-[var(--color-text)] font-semibold mt-2">
+                  3-Months Warranty
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center text-center">
+                <i
+                  class="fas fa-street-view text-2xl lg:text-4xl p-3 rounded-full text-white bg-[var(--color-primary)]"
+                ></i>
+                <p class="text-[var(--color-text)] font-semibold mt-2">
+                  10+ Years of Experience
+                </p>
+              </div>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="flex justify-center flex-1">
+              <img
+                src="https://rmr.aakashhub.com/wp-content/uploads/2025/04/client-1024x1009.jpg"
+                alt="Technician"
+                class="rounded-lg max-w-xs w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="mt-20">
+          <h2
+            class="text-2xl lg:text-4xl font-bold text-center text-blue-900 mb-10"
+          >
+            🫣 Frequently Asked Questions
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- FAQ Item -->
+            <div class="border rounded shadow-sm">
+              <button
+                onclick="toggleFAQ(0)"
+                class="w-full text-left px-4 py-3 font-medium flex justify-between items-center"
+              >
+                How long does it take to repair a mobile or laptop?
+                <span id="icon-0" class="text-xl">−</span>
+              </button>
+              <div id="faq-0" class="px-4 pb-4 text-gray-600">
+                Most mobile repairs like screen or battery replacement take
+                <strong>1 to 2 hours</strong>. Laptop issues like slow
+                performance or software fixes are usually done
+                <strong>within the same day</strong>. For complex hardware
+                repairs, we’ll let you know the exact turnaround time during
+                diagnosis.
+              </div>
+            </div>
+
+            <!-- FAQ Item -->
+            <div class="border rounded shadow-sm">
+              <button
+                onclick="toggleFAQ(1)"
+                class="w-full text-left px-4 py-3 font-medium flex justify-between items-center"
+              >
+                Do you use original parts for replacements?
+                <span id="icon-1" class="text-xl">+</span>
+              </button>
+              <div id="faq-1" class="px-4 pb-4 text-gray-600 hidden">
+                Yes, we use genuine and original parts for all replacements to
+                ensure quality and longevity.
+              </div>
+            </div>
+
+            <!-- FAQ Item -->
+            <div class="border rounded shadow-sm">
+              <button
+                onclick="toggleFAQ(2)"
+                class="w-full text-left px-4 py-3 font-medium flex justify-between items-center"
+              >
+                Is there a warranty on the repairs you provide?
+                <span id="icon-2" class="text-xl">+</span>
+              </button>
+              <div id="faq-2" class="px-4 pb-4 text-gray-600 hidden">
+                Yes, we provide a 3-month warranty on all repairs for your peace
+                of mind.
+              </div>
+            </div>
+
+            <!-- FAQ Item -->
+            <div class="border rounded shadow-sm">
+              <button
+                onclick="toggleFAQ(3)"
+                class="w-full text-left px-4 py-3 font-medium flex justify-between items-center"
+              >
+                Can I walk into the store, or do I need an appointment?
+                <span id="icon-3" class="text-xl">+</span>
+              </button>
+              <div id="faq-3" class="px-4 pb-4 text-gray-600 hidden">
+                Both are welcome! You can
+                <strong>walk in anytime during business hours</strong>, or
+                <strong>book an appointment online</strong> for faster service.
+                We also offer same-day diagnosis for urgent issues.
+              </div>
+            </div>
+
+            <!-- FAQ Item -->
+            <div class="border rounded shadow-sm">
+              <button
+                onclick="toggleFAQ(4)"
+                class="w-full text-left px-4 py-3 font-medium flex justify-between items-center"
+              >
+                What should I do before handing over my device for repair?
+                <span id="icon-4" class="text-xl">+</span>
+              </button>
+              <div id="faq-4" class="px-4 pb-4 text-gray-600 hidden">
+                Please backup your data and remove any passwords or locks from
+                your device, if possible.
+              </div>
+            </div>
+
+            <!-- FAQ Item -->
+            <div class="border rounded shadow-sm">
+              <button
+                onclick="toggleFAQ(5)"
+                class="w-full text-left px-4 py-3 font-medium flex justify-between items-center"
+              >
+                Do you offer any accessories for sale?
+                <span id="icon-5" class="text-xl">+</span>
+              </button>
+              <div id="faq-5" class="px-4 pb-4 text-gray-600 hidden">
+                Yes, we offer a variety of accessories such as chargers, cables,
+                cases, and more.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-[#f5f7fa] h-96 flex flex-col justify-center p-3 items-center mt-20"
+        >
+          <h1
+            class="text-[var(--color-primary)] font-bold text-2xl lg:text-4xl text-center"
+          >
+            Need Urgent Mobile or Laptop Repair?
+          </h1>
+          <p class="text-[var(--color-text)] text-center my-2 lg:my-4">
+            “Get fast, affordable, and expert service today — from cracked
+            screens to laptop slowdowns.”
+          </p>
+          <button
+            class="bg-[var(--color-primary)] px-3 py-3 text-white cursor-pointer hover:scale-105 duration-200 font-[500] rounded-lg"
+          >
+            Book a Free Consultation
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-800 py-20">
+      <div
+        class="max-w-7xl px-6 mx-auto flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between"
+      >
+        <!-- Logo Section -->
+        <div class="text-center sm:text-left">
+          <img
+            src="./WhatsApp Image 2025-05-08 at 10.59.42_93d662f1.jpg"
+            alt="Logo"
+            class="mb-4 mx-auto w-56 sm:mx-0"
+          />
+          <p class="text-[var(--color-primary)] text-xl font-semibold mt-2">
+            Roshan Mobile Repair (RMR)
+          </p>
+          <p class="text-sm text-gray-500 mt-2 max-w-xs mx-auto sm:mx-0">
+            We provide fast, affordable, and reliable mobile repair services for
+            all major brands.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="text-center sm:text-left">
+          <h3 class="text-xl font-semibold mb-4 text-[var(--color-primary)]">
+            Quick Links
+          </h3>
+          <ul class="space-y-2 text-[var(--color-text)]">
+            <li>
+              <a
+                href="./index.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="./shop.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="./project.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="text-center sm:text-left">
+          <h3 class="text-xl font-semibold mb-4 text-[var(--color-primary)]">
+            Follow Us
+          </h3>
+          <ul
+            class="flex justify-center sm:justify-start space-x-4 text-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-facebook text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-twitter text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-youtube text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-square-instagram text-xl"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="mt-10 border-t border-gray-200 pt-4 text-center text-sm text-gray-500"
+      >
+        <p class="mt-5">
+          © 2025
+          <span class="text-[var(--color-primary)] font-bold"
+            >Roshan Mobile Repair</span
+          >. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- overlay -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-30 hidden z-30 lg:hidden"
+    ></div>
+
+    <!-- JavaScript -->
+    <script>
+      const ham_toggle = document.getElementById("ham-toggle");
+      const cross_toggle = document.getElementById("cross-toggle");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+
+      ham_toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("-translate-x-full");
+        overlay.classList.toggle("hidden");
+        cross_toggle.classList.toggle("hidden");
+        ham_toggle.classList.toggle("hidden");
+      });
+
+      overlay.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+      });
+      cross_toggle.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+        ham_toggle.classList.toggle("hidden");
+        cross_toggle.classList.toggle("hidden");
+      });
+
+      let currentOpen = 0;
+
+      function toggleFAQ(index) {
+        if (currentOpen === index) {
+          document.getElementById(`faq-${index}`).classList.toggle("hidden");
+          document.getElementById(`icon-${index}`).textContent = document
+            .getElementById(`faq-${index}`)
+            .classList.contains("hidden")
+            ? "+"
+            : "−";
+          return;
+        }
+
+        // Close previous
+        document.getElementById(`faq-${currentOpen}`).classList.add("hidden");
+        document.getElementById(`icon-${currentOpen}`).textContent = "+";
+
+        // Open new
+        document.getElementById(`faq-${index}`).classList.remove("hidden");
+        document.getElementById(`icon-${index}`).textContent = "−";
+
+        currentOpen = index;
+      }
+    </script>
+  </body>
+</html>
