@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Roshan Mobile Repair(RMR)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/input.css" />
+  </head>
+  <body>
+    <!-- Navbar (Top) -->
+    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold">
+          <img
+            src="./Screenshot-2025-05-04-08.48.25.png"
+            class="w-10"
+            alt="Logo"
+          />
+        </div>
+
+        <!-- Regular Navbar (visible on lg) -->
+        <ul class="hidden lg:flex space-x-8 font-medium">
+          <li>
+            <a href="./index.html" class="hover:text-[var(--color-primary)]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="./services.html" class="hover:text-[var(--color-primary)]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="./shop.html" class="hover:text-[var(--color-primary)]"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a href="./about.html" class="hover:text-[var(--color-primary)]"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="./project.html" class="hover:text-[var(--color-primary)]"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="hover:text-[var(--color-primary)]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="./blog.html" class="hover:text-[var(--color-primary)]"
+              >Blog</a
+            >
+          </li>
+        </ul>
+        <div class="relative hidden lg:flex">
+          <span
+            class="absolute left-24 bottom-6 bg-white text-black rounded-[100px] px-1"
+            >0</span
+          >
+          <button
+            class="bg-[var(--color-primary)] px-3 py-2 text-white flex gap-3 hover:opacity-90 rounded-md items-center"
+          >
+            My cart <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+        <!-- Hamburger (visible on small) -->
+        <button id="ham-toggle" class="lg:hidden block focus:outline-none">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+        <button id="cross-toggle" class="lg:hidden hidden">
+          <i class="fa-solid fa-xmark text-3xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div
+      id="sidebar"
+      class="fixed top-0 left-0 w-64 h-full flex justify-center flex-col gap-20 items-center bg-white shadow-md transform -translate-x-full transition-transform duration-300 z-40 lg:hidden p-6 pt-20"
+    >
+      <ul class="space-y-6 flex flex-col items-center text-lg font-medium">
+        <li>
+          <a href="./index.html" class="block hover:text-[var(--color-primary)]"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="./services.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="./shop.html" class="block hover:text-[var(--color-primary)]"
+            >Shop</a
+          >
+        </li>
+        <li>
+          <a href="./about.html" class="block hover:text-[var(--color-primary)]"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="./project.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="./contact.html"
+            class="block hover:text-[var(--color-primary)]"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="./blog.html" class="block hover:text-[var(--color-primary)]"
+            >Blog</a
+          >
+        </li>
+      </ul>
+    </div>
+    <section class="mt-20">
+      <div class="max-w-7xl px-5 mx-auto">
+        <div
+          class="bg-gray-300 h-72 flex items-center px-5 justify-center flex-col"
+        >
+          <h1
+            class="text-[var(--color-primary)] text-center font-bold text-2xl lg:text-4xl"
+          >
+            Get in Touch with Roshan Mobile Repair
+          </h1>
+          <p class="text-center text-[var(--color-text)] mt-1">
+            Have an issue with your device? We’re here to help – fast, friendly,
+            and reliable service in London.
+          </p>
+        </div>
+
+        <div class="bg-white text-gray-800 py-12 px-6 md:px-16">
+          <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+            <!-- 📞 Additional Info Column -->
+            <div class="space-y-6">
+              <h2 class="text-3xl font-bold text-gray-900">Get in Touch</h2>
+              <p class="text-gray-600">
+                Have a question or need support? We're here to help!
+              </p>
+
+              <div class="space-y-4 text-lg">
+                <p><strong>📞 Phone:</strong> +447939968443</p>
+                <p><strong>📧 Email:</strong> support@rmrshop.co.uk</p>
+                <p><strong>🌍 Location:</strong> London, United Kingdom</p>
+                <p>
+                  <strong>🕒 Working Hours:</strong> Mon – Sat ( 10:00 am – 7:00
+                  pm)
+                </p>
+              </div>
+            </div>
+
+            <!-- 📬 Form Column -->
+            <form class="bg-gray-50 shadow-lg rounded-2xl p-8 space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-medium mb-1"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-[var(--color-primary)]"
+                  placeholder="Your name"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium mb-1"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-[var(--color-primary)]"
+                  placeholder="you@example.com"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium mb-1"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-[var(--color-primary)]"
+                  placeholder="Write your message..."
+                  required
+                  autocomplete="off"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="bg-[var(--color-primary)] text-white px-6 py-2 rounded hover:bg-blue-800 transition"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-white text-gray-800 py-20">
+      <div
+        class="max-w-7xl px-6 mx-auto flex flex-col gap-8 lg:flex lg:flex-row lg:justify-between"
+      >
+        <!-- Logo Section -->
+        <div class="text-center sm:text-left">
+          <img
+            src="./WhatsApp Image 2025-05-08 at 10.59.42_93d662f1.jpg"
+            alt="Logo"
+            class="mb-4 mx-auto w-56 sm:mx-0"
+          />
+          <p class="text-[var(--color-primary)] text-xl font-semibold mt-2">
+            Roshan Mobile Repair (RMR)
+          </p>
+          <p class="text-sm text-gray-500 mt-2 max-w-xs mx-auto sm:mx-0">
+            We provide fast, affordable, and reliable mobile repair services for
+            all major brands.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="text-center sm:text-left">
+          <h3 class="text-xl font-semibold mb-4 text-[var(--color-primary)]">
+            Quick Links
+          </h3>
+          <ul class="space-y-2 text-[var(--color-text)]">
+            <li>
+              <a
+                href="./index.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="./shop.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="./project.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="hover:text-[var(--color-primary)] font-[500] transition duration-300"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="text-center sm:text-left">
+          <h3 class="text-xl font-semibold mb-4 text-[var(--color-primary)]">
+            Follow Us
+          </h3>
+          <ul
+            class="flex justify-center sm:justify-start space-x-4 text-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-facebook text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-twitter text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-youtube text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-[var(--color-primary)] transition duration-300"
+                ><i class="fa-brands fa-square-instagram text-xl"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="mt-10 border-t border-gray-200 pt-4 text-center text-sm text-gray-500"
+      >
+        <p class="mt-5">
+          © 2025
+          <span class="text-[var(--color-primary)] font-bold"
+            >Roshan Mobile Repair</span
+          >. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
